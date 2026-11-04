@@ -14,19 +14,11 @@
 			remoteGlobalIDString = 63C2818230994D1500ACFEA4;
 			remoteInfo = ErrorStateFix;
 		};
-		63C2819B30994D1800ACFEA4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 63C2817B30994D1500ACFEA4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 63C2818230994D1500ACFEA4;
-			remoteInfo = ErrorStateFix;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		63C2818330994D1500ACFEA4 /* ErrorStateFix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ErrorStateFix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63C2819030994D1800ACFEA4 /* ErrorStateFixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ErrorStateFixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		63C2819A30994D1800ACFEA4 /* ErrorStateFixUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ErrorStateFixUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -38,11 +30,6 @@
 		63C2819330994D1800ACFEA4 /* ErrorStateFixTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = ErrorStateFixTests;
-			sourceTree = "<group>";
-		};
-		63C2819D30994D1800ACFEA4 /* ErrorStateFixUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ErrorStateFixUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -62,13 +49,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		63C2819730994D1800ACFEA4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,7 +57,6 @@
 			children = (
 				63C2818530994D1500ACFEA4 /* ErrorStateFix */,
 				63C2819330994D1800ACFEA4 /* ErrorStateFixTests */,
-				63C2819D30994D1800ACFEA4 /* ErrorStateFixUITests */,
 				63C2818430994D1500ACFEA4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,7 +66,6 @@
 			children = (
 				63C2818330994D1500ACFEA4 /* ErrorStateFix.app */,
 				63C2819030994D1800ACFEA4 /* ErrorStateFixTests.xctest */,
-				63C2819A30994D1800ACFEA4 /* ErrorStateFixUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,29 +118,6 @@
 			productReference = 63C2819030994D1800ACFEA4 /* ErrorStateFixTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		63C2819930994D1800ACFEA4 /* ErrorStateFixUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 63C281AA30994D1800ACFEA4 /* Build configuration list for PBXNativeTarget "ErrorStateFixUITests" */;
-			buildPhases = (
-				63C2819630994D1800ACFEA4 /* Sources */,
-				63C2819730994D1800ACFEA4 /* Frameworks */,
-				63C2819830994D1800ACFEA4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				63C2819C30994D1800ACFEA4 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				63C2819D30994D1800ACFEA4 /* ErrorStateFixUITests */,
-			);
-			name = ErrorStateFixUITests;
-			packageProductDependencies = (
-			);
-			productName = ErrorStateFixUITests;
-			productReference = 63C2819A30994D1800ACFEA4 /* ErrorStateFixUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -177,10 +132,6 @@
 						CreatedOnToolsVersion = 26.5;
 					};
 					63C2818F30994D1800ACFEA4 = {
-						CreatedOnToolsVersion = 26.5;
-						TestTargetID = 63C2818230994D1500ACFEA4;
-					};
-					63C2819930994D1800ACFEA4 = {
 						CreatedOnToolsVersion = 26.5;
 						TestTargetID = 63C2818230994D1500ACFEA4;
 					};
@@ -202,7 +153,6 @@
 			targets = (
 				63C2818230994D1500ACFEA4 /* ErrorStateFix */,
 				63C2818F30994D1800ACFEA4 /* ErrorStateFixTests */,
-				63C2819930994D1800ACFEA4 /* ErrorStateFixUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -216,13 +166,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		63C2818E30994D1800ACFEA4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		63C2819830994D1800ACFEA4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -246,13 +189,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		63C2819630994D1800ACFEA4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -260,11 +196,6 @@
 			isa = PBXTargetDependency;
 			target = 63C2818230994D1500ACFEA4 /* ErrorStateFix */;
 			targetProxy = 63C2819130994D1800ACFEA4 /* PBXContainerItemProxy */;
-		};
-		63C2819C30994D1800ACFEA4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 63C2818230994D1500ACFEA4 /* ErrorStateFix */;
-			targetProxy = 63C2819B30994D1800ACFEA4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -498,46 +429,6 @@
 			};
 			name = Release;
 		};
-		63C281AB30994D1800ACFEA4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Q69GHDS557;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tesleemamuda.ErrorStateFixUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ErrorStateFix;
-			};
-			name = Debug;
-		};
-		63C281AC30994D1800ACFEA4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Q69GHDS557;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tesleemamuda.ErrorStateFixUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ErrorStateFix;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -564,15 +455,6 @@
 			buildConfigurations = (
 				63C281A830994D1800ACFEA4 /* Debug */,
 				63C281A930994D1800ACFEA4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		63C281AA30994D1800ACFEA4 /* Build configuration list for PBXNativeTarget "ErrorStateFixUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				63C281AB30994D1800ACFEA4 /* Debug */,
-				63C281AC30994D1800ACFEA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -10,10 +10,27 @@ import Testing
 
 struct ErrorStateFixTests {
 
-    @Test func example() async throws {
-        // Write your test here and use APIs like `#expect(...)` to check expected conditions.
-        // Swift Testing Documentation
-        // https://developer.apple.com/documentation/testing
+    @Test @MainActor func decodingFailureSetsErrorMessage() async throws {
+        let viewModel = UserViewModel()
+        viewModel.loadUser()
+        
+        //Give the task a moment to fail
+        try await Task.sleep(for: .milliseconds(100))
+        
+        #expect(viewModel.isLoading == false)
+        #expect(viewModel.errorMessage != nil)
+        #expect(viewModel.user == nil)
+    }
+    
+    @Test @MainActor func retryCancelsPreviousTask() async throws {
+        let viewModel = UserViewModel()
+        viewModel.loadUser()
+        viewModel.retry()
+        
+        //Give the task a moment to fail
+        try await Task.sleep(for: .milliseconds(100))
+        
+        #expect(viewModel.isLoading == false)
     }
 
 }

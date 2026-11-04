@@ -7,6 +7,11 @@ struct ContentView: View {
         Group {
             if viewModel.isLoading {
                 ProgressView("Loading…")
+            } else if let error = viewModel.errorMessage {
+                Text(error)
+                Button("Retry") {
+                    viewModel.retry()
+                }
             } else if let user = viewModel.user {
                 VStack(spacing: 8) {
                     Text(user.name).font(.title2)
@@ -17,7 +22,7 @@ struct ContentView: View {
             }
         }
         .task {
-            await viewModel.loadUser()
+            viewModel.loadUser()
         }
     }
 }
